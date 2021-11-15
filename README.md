@@ -18,14 +18,20 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 There are two installation methods that you can choose:
 ### Composer Installation
 - Run "`composer create-project abydahana/aksara aksaracms`" anywhere inside your root directory of your web server. The command will create "`aksaracms`" folder. If you omit the "`aksaracms`" argument, the command will create an "`aksara`" folder instead, which can be renamed as appropriate;
+- Prepare the database and db user
+- Give www-data write access to folders: root of the project (to write config.php on installation), modules, writable, and public/uploads
 - Access your project from the browser and;
 - Follow the installation wizard.
+- Remove ww-data from write access to folders: root of the project (writing config.php is done) and modules
 
 ### Manual Installation
 - Download the source code and extract its content to the directory of your webserver;
 - Run "`composer install`" from the root of Aksara project directory;
+- Prepare the database and db user
+- Give www-data write access to folders: root of the project (to write config.php on installation), modules, writable, and public/uploads
 - Access your project from the browser and;
 - Follow the installation wizard.
+- Remove ww-data from write access to folders: root of the project (writing config.php is done) and modules
 
 **Yes, as simple as that!**
 
